@@ -19,9 +19,10 @@ struct Login: View {
             Text("Login")
                 .padding(.top, 50)
                 .padding(.bottom, 35)
+                .padding(.leading, 10)
                 .font(.system(size: 28))
                 .bold()
-                .frame(width: 260, alignment: .leading)
+                .frame(maxWidth: .infinity, alignment: .leading)
             VStack(spacing: 25) {
                 TextField("Email", text: $email)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
@@ -41,7 +42,7 @@ struct Login: View {
                         .frame(maxWidth: .infinity, alignment: .trailing)
                 }
             }
-            .padding(.horizontal, 75)
+            .padding(.horizontal, 10)
             Spacer()
             HStack {
                 Text("Don't have an account yet?")
