@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		55B896C12AA4D81D00B3EBCE /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B896C02AA4D81D00B3EBCE /* Register.swift */; };
-		55B896C32AA4D82600B3EBCE /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B896C22AA4D82600B3EBCE /* Login.swift */; };
+		552B5F712B21FC3300FDB8FD /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552B5F702B21FC3300FDB8FD /* Home.swift */; };
+		552B5F752B21FF9800FDB8FD /* StudentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552B5F742B21FF9800FDB8FD /* StudentModel.swift */; };
+		552B5F772B22016A00FDB8FD /* ExampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552B5F762B22016A00FDB8FD /* ExampleData.swift */; };
+		552B5F792B2204B400FDB8FD /* StudentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552B5F782B2204B400FDB8FD /* StudentDetailView.swift */; };
+		552B5F7D2B2229AE00FDB8FD /* FloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552B5F7C2B2229AE00FDB8FD /* FloatingActionButton.swift */; };
+		55B896C12AA4D81D00B3EBCE /* AddNewStudentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B896C02AA4D81D00B3EBCE /* AddNewStudentView.swift */; };
 		55D19B022A94E0C3006BCFCD /* SwiftUI_MasterprojectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D19B012A94E0C3006BCFCD /* SwiftUI_MasterprojectApp.swift */; };
 		55D19B042A94E0C3006BCFCD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D19B032A94E0C3006BCFCD /* ContentView.swift */; };
 		55D19B062A94E0C5006BCFCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55D19B052A94E0C5006BCFCD /* Assets.xcassets */; };
@@ -16,8 +20,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		55B896C02AA4D81D00B3EBCE /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
-		55B896C22AA4D82600B3EBCE /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		552B5F702B21FC3300FDB8FD /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		552B5F742B21FF9800FDB8FD /* StudentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentModel.swift; sourceTree = "<group>"; };
+		552B5F762B22016A00FDB8FD /* ExampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleData.swift; sourceTree = "<group>"; };
+		552B5F782B2204B400FDB8FD /* StudentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentDetailView.swift; sourceTree = "<group>"; };
+		552B5F7C2B2229AE00FDB8FD /* FloatingActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingActionButton.swift; sourceTree = "<group>"; };
+		55B896C02AA4D81D00B3EBCE /* AddNewStudentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewStudentView.swift; sourceTree = "<group>"; };
 		55D19AFE2A94E0C3006BCFCD /* SwiftUI_Masterproject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_Masterproject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55D19B012A94E0C3006BCFCD /* SwiftUI_MasterprojectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_MasterprojectApp.swift; sourceTree = "<group>"; };
 		55D19B032A94E0C3006BCFCD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,6 +44,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		552B5F7A2B22295C00FDB8FD /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				55D19B032A94E0C3006BCFCD /* ContentView.swift */,
+				55B896C02AA4D81D00B3EBCE /* AddNewStudentView.swift */,
+				552B5F702B21FC3300FDB8FD /* Home.swift */,
+				552B5F782B2204B400FDB8FD /* StudentDetailView.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		552B5F7B2B22296500FDB8FD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				552B5F7C2B2229AE00FDB8FD /* FloatingActionButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		55D19AF52A94E0C3006BCFCD = {
 			isa = PBXGroup;
 			children = (
@@ -55,10 +82,11 @@
 		55D19B002A94E0C3006BCFCD /* SwiftUI_Masterproject */ = {
 			isa = PBXGroup;
 			children = (
+				552B5F7B2B22296500FDB8FD /* Views */,
+				552B5F7A2B22295C00FDB8FD /* Pages */,
 				55D19B012A94E0C3006BCFCD /* SwiftUI_MasterprojectApp.swift */,
-				55D19B032A94E0C3006BCFCD /* ContentView.swift */,
-				55B896C02AA4D81D00B3EBCE /* Register.swift */,
-				55B896C22AA4D82600B3EBCE /* Login.swift */,
+				552B5F742B21FF9800FDB8FD /* StudentModel.swift */,
+				552B5F762B22016A00FDB8FD /* ExampleData.swift */,
 				55D19B052A94E0C5006BCFCD /* Assets.xcassets */,
 				55D19B072A94E0C5006BCFCD /* Preview Content */,
 			);
@@ -143,10 +171,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55B896C12AA4D81D00B3EBCE /* Register.swift in Sources */,
+				55B896C12AA4D81D00B3EBCE /* AddNewStudentView.swift in Sources */,
+				552B5F772B22016A00FDB8FD /* ExampleData.swift in Sources */,
 				55D19B042A94E0C3006BCFCD /* ContentView.swift in Sources */,
+				552B5F7D2B2229AE00FDB8FD /* FloatingActionButton.swift in Sources */,
+				552B5F752B21FF9800FDB8FD /* StudentModel.swift in Sources */,
 				55D19B022A94E0C3006BCFCD /* SwiftUI_MasterprojectApp.swift in Sources */,
-				55B896C32AA4D82600B3EBCE /* Login.swift in Sources */,
+				552B5F712B21FC3300FDB8FD /* Home.swift in Sources */,
+				552B5F792B2204B400FDB8FD /* StudentDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

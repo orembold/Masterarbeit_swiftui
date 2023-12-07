@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var studentsList = ExampleData.getStudentsData()
     var body: some View {
-        Login()
+        Home(studentsList: $studentsList)
     }
 }
 
