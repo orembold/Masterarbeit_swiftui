@@ -26,19 +26,9 @@ struct Home: View {
                         .padding(.top, 20)
                         .font(.title)
                         .frame(maxWidth: .infinity, alignment: .leading)
-                    List(studentsList) { student in
+                    List($studentsList, id: \.self, editActions: .delete) { $student in
                         NavigationLink(destination: StudentDetailsView(student: student)) {
-                            HStack {
-                                Image(systemName: "person.circle.fill")
-                                    .resizable()
-                                    .frame(width: 50, height: 50)
-                                VStack(alignment: .leading) {
-                                    Text("\(student.firstname) \(student.lastname)")
-                                        .font(.headline)
-                                    Text("Course of study: \(student.courseOfStudy)")
-                                        .font(.subheadline)
-                                }
-                            }
+                            StudentLineItem(student: student)
                         }
                     }
                     .listStyle(.inset)

@@ -16,16 +16,15 @@ struct FloatingActionButton: View {
             Spacer()
             HStack {
                 Spacer()
-                Button(action: {
-                    action()
-                }) {
-                    Image(systemName: "plus.circle.fill")
-                        .resizable()
-                        .frame(width: 50, height: 50)
-                        .foregroundColor(.black)
-                        .padding()
-                        .cornerRadius(25)
-                }
+                Image(systemName: "plus.circle.fill")
+                    .resizable()
+                    .frame(width: 50, height: 50)
+                    .foregroundColor(.black)
+                    .padding()
+                    .cornerRadius(25)
+                    .onTapGesture {
+                        action()
+                    }
                 .padding(.trailing, 10)
             }
         }

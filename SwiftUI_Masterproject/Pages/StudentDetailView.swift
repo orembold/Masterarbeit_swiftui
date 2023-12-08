@@ -29,11 +29,10 @@ struct StudentDetailsView: View {
                 Text("Course of Study: \(student.courseOfStudy)")
                 Text("Student number: \(student.studentNumber)")
             }
-            .frame(maxWidth: .infinity)
             Spacer()
         }
-        .padding()
-        .navigationBarTitle(student.firstname)
+        .navigationBarTitle(student.fullName)
+        .padding(20)
     }
 }
 

@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		552B5F712B21FC3300FDB8FD /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552B5F702B21FC3300FDB8FD /* Home.swift */; };
+		552B5F712B21FC3300FDB8FD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552B5F702B21FC3300FDB8FD /* HomeView.swift */; };
 		552B5F752B21FF9800FDB8FD /* StudentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552B5F742B21FF9800FDB8FD /* StudentModel.swift */; };
 		552B5F772B22016A00FDB8FD /* ExampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552B5F762B22016A00FDB8FD /* ExampleData.swift */; };
 		552B5F792B2204B400FDB8FD /* StudentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552B5F782B2204B400FDB8FD /* StudentDetailView.swift */; };
 		552B5F7D2B2229AE00FDB8FD /* FloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552B5F7C2B2229AE00FDB8FD /* FloatingActionButton.swift */; };
+		55555C0F2B2380A900AB0A79 /* StudentLineItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55555C0E2B2380A900AB0A79 /* StudentLineItem.swift */; };
 		55B896C12AA4D81D00B3EBCE /* AddNewStudentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B896C02AA4D81D00B3EBCE /* AddNewStudentView.swift */; };
 		55D19B022A94E0C3006BCFCD /* SwiftUI_MasterprojectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D19B012A94E0C3006BCFCD /* SwiftUI_MasterprojectApp.swift */; };
 		55D19B042A94E0C3006BCFCD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D19B032A94E0C3006BCFCD /* ContentView.swift */; };
@@ -20,11 +21,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		552B5F702B21FC3300FDB8FD /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		552B5F702B21FC3300FDB8FD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		552B5F742B21FF9800FDB8FD /* StudentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentModel.swift; sourceTree = "<group>"; };
 		552B5F762B22016A00FDB8FD /* ExampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleData.swift; sourceTree = "<group>"; };
 		552B5F782B2204B400FDB8FD /* StudentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentDetailView.swift; sourceTree = "<group>"; };
 		552B5F7C2B2229AE00FDB8FD /* FloatingActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingActionButton.swift; sourceTree = "<group>"; };
+		55555C0E2B2380A900AB0A79 /* StudentLineItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentLineItem.swift; sourceTree = "<group>"; };
 		55B896C02AA4D81D00B3EBCE /* AddNewStudentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewStudentView.swift; sourceTree = "<group>"; };
 		55D19AFE2A94E0C3006BCFCD /* SwiftUI_Masterproject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_Masterproject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55D19B012A94E0C3006BCFCD /* SwiftUI_MasterprojectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_MasterprojectApp.swift; sourceTree = "<group>"; };
@@ -49,7 +51,7 @@
 			children = (
 				55D19B032A94E0C3006BCFCD /* ContentView.swift */,
 				55B896C02AA4D81D00B3EBCE /* AddNewStudentView.swift */,
-				552B5F702B21FC3300FDB8FD /* Home.swift */,
+				552B5F702B21FC3300FDB8FD /* HomeView.swift */,
 				552B5F782B2204B400FDB8FD /* StudentDetailView.swift */,
 			);
 			path = Pages;
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				552B5F7C2B2229AE00FDB8FD /* FloatingActionButton.swift */,
+				55555C0E2B2380A900AB0A79 /* StudentLineItem.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -177,7 +180,8 @@
 				552B5F7D2B2229AE00FDB8FD /* FloatingActionButton.swift in Sources */,
 				552B5F752B21FF9800FDB8FD /* StudentModel.swift in Sources */,
 				55D19B022A94E0C3006BCFCD /* SwiftUI_MasterprojectApp.swift in Sources */,
-				552B5F712B21FC3300FDB8FD /* Home.swift in Sources */,
+				552B5F712B21FC3300FDB8FD /* HomeView.swift in Sources */,
+				55555C0F2B2380A900AB0A79 /* StudentLineItem.swift in Sources */,
 				552B5F792B2204B400FDB8FD /* StudentDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

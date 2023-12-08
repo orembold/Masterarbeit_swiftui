@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct StudentModel: Decodable, Identifiable {
+struct StudentModel: Decodable, Identifiable, Hashable {
     var id = UUID()
     let firstname: String
     let lastname: String
@@ -16,6 +16,10 @@ struct StudentModel: Decodable, Identifiable {
     let semesterCount: Int
     let studentNumber: Int
     let courseOfStudy: String
+    
+    var fullName: String {
+        return "\(firstname) \(lastname)"
+    }
     
     
     private enum CodingKeys: String, CodingKey {
