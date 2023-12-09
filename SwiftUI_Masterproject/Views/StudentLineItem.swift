@@ -19,7 +19,7 @@ struct StudentLineItem: View {
             VStack(alignment: .leading) {
                 Text(student.fullName)
                     .font(.headline)
-                Text("Course of study: \(student.courseOfStudy)")
+                Text(student.courseOfStudy)
                     .font(.subheadline)
             }
         }
