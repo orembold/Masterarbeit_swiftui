@@ -14,15 +14,15 @@ struct AddNewStudentView: View {
     
     @State var firstname: String = ""
     @State var lastname: String = ""
-    @State var age: Int = 0
-    @State var semesterCount: Int = 0
-    @State var studentNumber: Int = 0
+    @State var age: String = ""
+    @State var semesterCount: String = ""
+    @State var studentNumber: String = ""
     @State private var selectedCourseOfStudy = "Physics"
     
     var availableCoursesOfStudy = ["Physics", "Mathematics", "Computer science", "English"]
     
     func addStudentToList() {
-        let studentModel = StudentModel(firstname: firstname, lastname: lastname, universityMail: "\(firstname).\(lastname)@stud.uni-regensburg.de", age: age, semesterCount: semesterCount, studentNumber: studentNumber, courseOfStudy: selectedCourseOfStudy)
+        let studentModel = StudentModel(firstname: firstname, lastname: lastname, universityMail: "\(firstname).\(lastname)@stud.uni-regensburg.de", age: Int(age) ?? 0, semesterCount: Int(semesterCount) ?? 0, studentNumber: Int(studentNumber) ?? 0, courseOfStudy: selectedCourseOfStudy)
         students.insert(studentModel, at: 0)
     }
     
@@ -51,7 +51,7 @@ struct AddNewStudentView: View {
                 }
                 Spacer()
             }
-            .padding(20)
         }
+        .padding(20)
     }
 }
