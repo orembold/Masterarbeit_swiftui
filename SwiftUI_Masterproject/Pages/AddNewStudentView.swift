@@ -12,17 +12,13 @@ struct AddNewStudentView: View {
     
     @Binding var students: [StudentModel]
     
-    @State var firstname: String = ""
-    @State var lastname: String = ""
-    @State var age: String = ""
-    @State var semesterCount: String = ""
     @State var studentNumber: String = ""
     @State private var selectedCourseOfStudy = "Physics"
     
     var availableCoursesOfStudy = ["Physics", "Mathematics", "Computer science", "English"]
     
     func addStudentToList() {
-        let studentModel = StudentModel(firstname: firstname, lastname: lastname, universityMail: "\(firstname).\(lastname)@stud.uni-regensburg.de", age: Int(age) ?? 0, semesterCount: Int(semesterCount) ?? 0, studentNumber: Int(studentNumber) ?? 0, courseOfStudy: selectedCourseOfStudy)
+        let studentModel = StudentModel(studentNumber: Int(studentNumber) ?? 0, courseOfStudy: selectedCourseOfStudy)
         students.insert(studentModel, at: 0)
     }
     
@@ -40,7 +36,12 @@ struct AddNewStudentView: View {
                 .bold()
                 .frame(maxWidth: .infinity, alignment: .leading)
             
-            Spacer()
+            Picker("Select course of study", selection: $selectedCourseOfStudy) {
+                ForEach(availableCoursesOfStudy, id: \.self) {
+                    Text($0)
+                }
+            }
+            .pickerStyle(.wheel)
             HStack {
                 Button {
                     dismiss()
@@ -51,6 +52,7 @@ struct AddNewStudentView: View {
                 }
                 Spacer()
             }
+            Spacer()
         }
         .padding(20)
     }
