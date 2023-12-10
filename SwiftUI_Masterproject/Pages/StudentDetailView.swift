@@ -16,18 +16,16 @@ struct StudentDetailsView: View {
                 .resizable()
                 .frame(width: 100, height: 100, alignment: .center)
             VStack(alignment: .leading) {
-                HStack {
-                    Text(student.firstname)
-                        .font(.title)
-                    Text(student.lastname)
-                        .font(.title)
-                }
+                Text(student.fullName)
+                    .font(.title)
                 .padding(.bottom, 10)
-                Text("Age: \(student.age)")
-                Text("University mail: \(student.universityMail)")
-                Text("Semester count: \(student.semesterCount)")
-                Text("Course of Study: \(student.courseOfStudy)")
-                Text("Student number: \(student.studentNumber)")
+                VStack(alignment: .leading, spacing: 8) {
+                    Text("Age: \(student.age)")
+                    Text("University mail: \(student.universityMail)")
+                    Text("Semester count: \(student.semesterCount)")
+                    Text("Course of Study: \(student.courseOfStudy)")
+                    Text("Student number: \(student.studentNumber)")
+                }
             }
             Spacer()
         }
