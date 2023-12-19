@@ -57,3 +57,10 @@ struct AddNewStudentView: View {
         .padding(20)
     }
 }
+
+struct AddNewStudentView_Preview: PreviewProvider {
+    @State static var studentList = ExampleData.getStudentsData()
+    static var previews: some View {
+        AddNewStudentView(students: $studentList)
+    }
+}
